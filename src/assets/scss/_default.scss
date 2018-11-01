@@ -22,22 +22,24 @@ body {
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  max-width: 940px;
+  padding: 0;
+  margin: 0 auto;
 
-  @include small {
-    margin: 0 auto;
-    width: 540px;
-  }
+  // @include small {
+  //   margin: 0 auto;
+  //   width: 540px;
+  // }
 
-  @include medium {
-    width: 720px;
-  }
+  // @include medium {
+  //   width: 720px;
+  // }
 
-  @include large {
-    width: 960px;
-  }
+  // @include large {
+  //   width: 960px;
+  // }
 
-  @include extra {
-    width: 1140px;
-  }
+  // @include extra {
+  //   width: 1140px;
+  // }
 }
