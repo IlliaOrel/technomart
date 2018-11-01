@@ -12,23 +12,26 @@
 }
 
 .section__header--btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   border: none;
   background-color: #fe5257;
   width: 250px;
   height: 38px;
-  padding: 0;
   border-radius: 3px;
-  :hover{
-    background-color: #ca2c37;
-  }
-  :active{
-    background-color :#ba2732;
-  }
+}
+.section__header--btn:hover{
+  background-color: #ca2c37;
+}
+.section__header--btn:active{
+  background-color :#ba2732;
 }
 
 .section__header--btn--title{
-    color: white;
-    text-transform: uppercase;
-    font-family: $base-font;
-    margin: 0;
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  font-family: $base-font;
 }
