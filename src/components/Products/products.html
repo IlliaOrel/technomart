@@ -1,3 +1,14 @@
+{%
+  set items = [
+    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn'},
+    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn'},
+    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn'},
+    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn'}
+  ]
+%}
+
+{% import "components/Products/Card/product-card.html" as product %}
+
 <section class="section products">
   <div class="container">
     <div class="section__header">
@@ -11,7 +22,9 @@
       </a>
     </div>
     <ul class="products__list">
-
+      {% for item in items %}
+        {{ product.card(item.photo, item.title, item.oldPrice, item.price) }}
+      {% endfor %}
     </ul>
   </div>
 </section>

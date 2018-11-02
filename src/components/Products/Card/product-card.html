@@ -1,0 +1,21 @@
+{% macro card(photo, title, oldPrice, price)%}
+<li class="product__item">
+  <figure class="product__card">
+    <img src="{{ photo }}" alt="product" class="product__photo">
+    <div class="btn__list">
+      <button class=" product__btn btn--buy">
+        <p class="title__buy">
+          <i class="material-icons">shopping_cart</i>
+          <span> Купить<span>
+        </p>
+      </button>
+      <button class="product__btn btn--basket">
+        <p class="title__basket">В корзину</p>
+      </button>
+    </div>
+    <h3 class="product__title">{{ title }}</h3>
+    <p class="product__oldprice">{{ oldPrice }}</p>
+    <button class="product__price--btn"><p class="product__price">{{ price }}</p></button>
+  </figure>
+</li>
+{% endmacro%}

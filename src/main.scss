@@ -1,6 +1,7 @@
 @import "normalize";
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,700|CPT+Sans:400,700&amp;subset=cyrillic');
 @import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import "./assets/scss/vars";
 @import "./assets/scss/mixins";
 @import "./assets/scss/default";
@@ -14,3 +15,4 @@
 @import "./components/SectionHeader/sectionheader";
 @import "./components/Service/service";
 @import "./components/Products/products";
+@import "./components/Products/Card/product-card";
