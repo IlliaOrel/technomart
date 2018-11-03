@@ -1,9 +1,9 @@
 {%
   set items = [
-    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn'},
-    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn'},
-    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn'},
-    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn'}
+    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: true},
+    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: false},
+    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: 'false'},
+    { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: 'false'}
   ]
 %}
 
@@ -23,7 +23,7 @@
     </div>
     <ul class="products__list">
       {% for item in items %}
-        {{ product.card(item.photo, item.title, item.oldPrice, item.price) }}
+        {{ product.card(item.photo, item.title, item.oldPrice, item.price, item.new) }}
       {% endfor %}
     </ul>
   </div>

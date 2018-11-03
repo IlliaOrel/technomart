@@ -2,10 +2,23 @@
   border: 1px solid #eaeaea;
   width: 220px;
   height: 315px;
+  position: relative;
 
   &:hover{
     border: none;
     box-shadow: 0 15px 20px rgba(0, 0, 0, .25);
+
+    .product__photo{
+      display: none;
+    }
+    .btn__list{
+      width: 184px;
+      height: 164px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
@@ -32,6 +45,7 @@
   text-decoration: line-through;
   margin: 0 0 12px 0;
 }
+
 .product__price--btn{
   width: 120px;
   height: 38px;
@@ -40,6 +54,7 @@
   border-radius: 2px;
   background-color: #fe5257;
   position: relative;
+  outline: none;
 
   &:after{
     content: "";
@@ -76,23 +91,8 @@
   color: #fff;
 }
 
-.product__photo{
-  position: relative;
-  &:hover{
-    visibility: hidden;
-    transition: .5s;
-  }
-}
-
 .btn__list{
-  width: 184px;
-  height: 164px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  visibility: hidden;
+  display: none;
 }
 .product__btn{
   padding: 0;
@@ -105,10 +105,37 @@
 .btn--buy{
   margin: 7px 0;
   box-shadow: 0 3px 0 rgb(5, 99, 33);
+  outline: none;
+  &:hover{
+    background-color: #5fbb2d;
+    border: 3px solid #5fbb2d;
+    .material-icons{
+      color: #fff;
+    }
+  }
+
+  &:active{
+    background-color: #518534;
+    border: 3px solid #518534;
+    .material-icons{
+      color: #fff;
+    }
+  }
+
 }
 
 .btn--basket{
   background-color: #fff;
+  outline: none;
+  &:hover{
+    border: 3px solid #32425c;
+  }
+  &:active{
+    border: 3px solid rgba(#32425c, .5);
+    .title__basket{
+      color: rgba(#32425c, .5);
+    }
+  }
 }
 
 .title__buy{
@@ -133,4 +160,36 @@
 .material-icons{
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.product__badge{
+  position: absolute;
+  border-left: 40px solid #fe5257;
+  border-bottom: 40px solid transparent;
+  border-top: 40px solid transparent;
+  transform: rotate(-45deg);
+  right: -7px;
+  top: -27px;
+  &:after{
+  content: "";
+  position: absolute;
+  border-left: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  right: 0px;
+  top: -10px;
+  }
+}
+.product__badge-title{
+  position: absolute;
+  margin: 0;
+  font-family: $base-font;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform: rotate(90deg);
+  right: 17px;
+  top: -10px;
 }
