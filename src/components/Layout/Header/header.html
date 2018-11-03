@@ -1,3 +1,7 @@
 <header class="header">
-  Hello, from Header
+{% include 'components/Layout/Header/HeaderTop/header-top.html' %}
+  <div class="container">
+  {% include 'components/Layout/Header/HeaderContent/header-content.html' %}
+  {% include 'components/Layout/Header/header-nav.html' %}
+  </div>
 </header>

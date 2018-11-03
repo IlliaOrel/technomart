@@ -2,9 +2,13 @@
 @import "./assets/scss/vars";
 @import "./assets/scss/mixins";
 @import "./assets/scss/default";
-@import "./components/Catalog/catalog";
-@import "./components/Layout/Footer/footer";
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import "./components/Layout/Header/header";
+@import "./components/Layout/Header/HeaderTop/header-top";
+@import "./components/Layout/Header/HeaderTop/header-top-order";
+@import "./components/Layout/Header/HeaderContent/header-content";
+@import "./components/Catalog/catalog";
 @import "./components/About/about";
 @import "./components/Logo/logo";
 @import "./components/Maker/maker";
@@ -12,3 +16,4 @@
 @import "./components/SectionHeader/sectionheader";
 @import "./components/Service/service";
 @import "./components/Products/products";
+@import "./components/Layout/Footer/footer";
