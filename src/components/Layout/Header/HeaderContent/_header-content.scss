@@ -3,20 +3,20 @@
 }
 
 .header-content__description {
-   font-style: italic;
-   color: #ff5357;
-   margin: 0;
-   line-height: 24px;
-   @include font-size(16);
-  }
+  font-style: italic;
+  color: #ff5357;
+  margin: 0;
+  line-height: 24px;
+  @include font-size(16);
+}
 
 .header-content__box {
   display: flex;
   align-items: center;
   flex: 1 0 33.33333%;
   margin: 0;
-  padding: 40px 50px 32px 50px; 
- }
+  padding: 40px 50px 32px 50px;
+}
 
 .header-content__adress {
   @include font-size(14);
@@ -25,12 +25,12 @@
   margin-top: 8px;
 }
 
-.header-content__box--phone{
-padding-top: 45px;
-padding-bottom: 25px;
-padding-left: 0px;
-padding-right: 20px;
- flex-direction: column;
+.header-content__box--phone {
+  padding-top: 45px;
+  padding-bottom: 25px;
+  padding-left: 0px;
+  padding-right: 20px;
+  flex-direction: column;
 }
 
 .header-content__phone {
@@ -45,7 +45,7 @@ padding-right: 20px;
   justify-content: center;
   height: 100%;
   width: 45px;
-  color :#c5c5c5;
+  color: #c5c5c5;
   text-align: center;
 }
 
@@ -58,7 +58,7 @@ padding-right: 20px;
   @include font-size(21);
   line-height: 18px;
   text-decoration: none;
-  color:#fb463c;
+  color: #fb463c;
   border: 3px solid #fff;
 }
 
@@ -74,7 +74,7 @@ padding-right: 20px;
   align-items: center;
   color: $primary;
   height: 42px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
   background: #fff;
   border: 0;
   @include font-size(21);
@@ -82,22 +82,22 @@ padding-right: 20px;
   outline: none;
   cursor: pointer;
   transition: color 0.1s linear;
-  
+
   &:hover {
     color: #fb463c;
   }
-  
-  &:hover  .enter-button__icon{
-    color: #32425c;
-    } 
-    
-    &:active {
-      color: #c5c5c5;
-    }
 
-    &:active  .enter-button__icon{
-      color: #c5c5c5;
-      } 
+  &:hover .enter-button__icon {
+    color: #32425c;
+  }
+
+  &:active {
+    color: #c5c5c5;
+  }
+
+  &:active .enter-button__icon {
+    color: #c5c5c5;
+  }
 }
 
 .header-content__box--button {
@@ -109,7 +109,6 @@ padding-right: 20px;
 .enter-button {
   width: 120px;
   padding-left: 0px;
-  
 }
 .registration-button {
   width: 150px;
@@ -121,10 +120,8 @@ padding-right: 20px;
   align-items: center;
   justify-content: center;
   height: 100%;
-  color :#c5c5c5;
+  color: #c5c5c5;
   text-align: center;
   margin: 0 9px;
   transition: color 0.1s linear;
 }
-
-
