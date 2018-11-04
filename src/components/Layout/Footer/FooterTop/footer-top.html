@@ -1,0 +1,38 @@
+<div class="footer-top">
+  <div class="container container--footer">
+    <div class="footer-top__row">
+      {% include 'components/Logo/logo.html' %}
+      <nav class="nav__footer">
+        {% set NavItems = [
+          { title: 'Компания', href: '#'},
+          { title: 'Новости', href: '#'},
+          { title: 'Каталог', href: '#'},
+          { title: 'Доставка', href: '#'},
+          { title: 'Контакты', href: '#'}
+          ] %}    
+          {% import 'components/Nav/nav.html' as NavList %}
+          {{ NavList.nav(NavItems)}}
+      </nav>
+    </div>
+    <div class="footer-top__row">
+       <div class="footer-top__adress-wrap">
+        <p class="footer-top__adress">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8           
+        </p>
+        <p class="footer-top__phone">
+          +7 (812) 555-05-55
+        </p>
+       </div>   
+       <nav class="nav__footer nav__footer--yellow">
+          {% set NavItems = [
+            { title: 'Материалы', href: '#'},
+            { title: 'Техника', href: '#'},
+            { title: 'Инструмент', href: '#'},
+            { title: 'Спецпредложения', href: '#'}
+            ] %}    
+            {% import 'components/Nav/nav.html' as NavList %}
+            {{ NavList.nav(NavItems)}}
+        </nav>       
+    </div>
+  </div>
+</div>

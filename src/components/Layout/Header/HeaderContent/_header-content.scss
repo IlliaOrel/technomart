@@ -15,16 +15,19 @@
   align-items: center;
   flex: 1 0 33.33333%;
   margin: 0;
-  padding: 40px 50px; 
+  padding: 40px 50px 32px 50px; 
  }
 
 .header-content__adress {
   @include font-size(14);
+  line-height: 24px;
   color: $secondary;
   margin-top: 8px;
 }
 
-.phone--box{
+.header-content__box--phone{
+padding-top: 45px;
+padding-bottom: 25px;
 padding-left: 0px;
 padding-right: 20px;
  flex-direction: column;
@@ -42,7 +45,7 @@ padding-right: 20px;
   justify-content: center;
   height: 100%;
   width: 45px;
-  color :#b7bfc8;
+  color :#c5c5c5;
   text-align: center;
 }
 
@@ -50,7 +53,7 @@ padding-right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
+  height: 42px;
   width: 100%;
   @include font-size(21);
   line-height: 18px;
@@ -70,7 +73,7 @@ padding-right: 20px;
   display: flex;
   align-items: center;
   color: $primary;
-  height: 40px;
+  height: 42px;
   font-family: 'Cuprum', sans-serif;
   background: #fff;
   border: 0;
@@ -78,10 +81,27 @@ padding-right: 20px;
   line-height: 18px;
   outline: none;
   cursor: pointer;
+  transition: color 0.1s linear;
+  
+  &:hover {
+    color: #fb463c;
+  }
+  
+  &:hover  .enter-button__icon{
+    color: #32425c;
+    } 
+    
+    &:active {
+      color: #c5c5c5;
+    }
+
+    &:active  .enter-button__icon{
+      color: #c5c5c5;
+      } 
 }
 
-.button--box {
-  padding: 40px 0px;
+.header-content__box--button {
+  padding: 45px 0px 25px 0;
   justify-content: flex-end;
   align-items: flex-start;
 }
@@ -101,9 +121,10 @@ padding-right: 20px;
   align-items: center;
   justify-content: center;
   height: 100%;
-  color :#edeff1;
+  color :#c5c5c5;
   text-align: center;
   margin: 0 9px;
+  transition: color 0.1s linear;
 }
 
 
