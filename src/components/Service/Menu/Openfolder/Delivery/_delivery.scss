@@ -1,0 +1,50 @@
+.delivery {
+    background-color:#f5f8fa;
+    color: #000;
+  }
+
+  .delivery__title{
+    font-family: $base-font;
+    color: #3c536e;
+    text-transform: uppercase;
+  }
+
+  .delivery__description{
+    color: $primary-text;
+    }
+  
+  
+
+  
+  .container--delivery {
+    box-shadow: -10px 0 1px 0 rgba(0,0,0,.1);
+    border: none;
+    @include extra {
+          height: 210px;
+          width: 700px;
+          display: flex;
+          }
+    }       
+        
+    
+
+    .container--img {
+      @include extra {
+        margin-left: 135px;
+        justify-content: flex-end;
+        width: 50%;
+      }
+      
+    }
+
+
+   
+    
+  .delivery__description-wrap {
+    color: #3c536e;
+    @include extra {
+      width: 50%;
+      margin-left: 80px;
+      justify-content: flex-start;
+    }
+  }

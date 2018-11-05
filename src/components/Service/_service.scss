@@ -1,59 +1,58 @@
-$serviceBackground: #f4f8f9 ;
 
-
-
-.service {
-  @include background(
-    rgba($color: #020202, $alpha: .3),
-    $serviceBackground
-  );
-  color: #fff;
+.service{
+  background-color:#f5f8fa;
 }
 
-.container--service {
-  @include large {
-    display: flex;
-    justify-content: flex-end;
-  }
+.service__title{
+  font-family: $base-font;
+  color: $primary-text;
+  text-transform: uppercase;
 }
 
 .service__description-wrap {
   @include large {
     width: 50%;
   }
+} 
+
+.service__openfolder {
+  @include large {
+    display: flex;
+}
 }
 
 
-.service__list-group {
-  margin-bottom: 0;
-  border: 1px solid black;
-  background: #fff;
-  color: #000;
 
-  & > :last-child {
-    margin-bottom: 0;
-  }
+.service__list{
+  list-style: none;
+  padding: 0;
 }
 
-.service__list-group-item {
-  border-bottom: #000;
 
-  & > :last-child {
-    margin-bottom: 0;
-    border-bottom: none;
-  }
 
-  &.active {
-    color: blue;
-    background-color: red;
-    border-color: #000;
-  }
 
-  &:hover, &:focus {
-    background-color: #000;
-    &.active {
-      background-color:white;
+/* .service__item   {
+  display: block;
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  background: #3c536e;
+  margin: 0;
+  color: #fff;
+  padding-left: 15px;
+  cursor: pointer;
+  font-family: $base-font;
+  transition: background .2s ease-in-out;
+  
+  &:hover{
+      background-color: #fff;
+      color: #3c536e;
     }
-  }
 
-}
+  &:before{
+      content: '';
+      position: absolute;
+      display: block;
+      height: 45px;
+  }
+} */
