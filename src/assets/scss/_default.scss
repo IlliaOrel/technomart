@@ -21,15 +21,10 @@ body {
 }
 
 .container {
-<<<<<<< HEAD
-=======
-  width: 100%;
->>>>>>> Illia
   max-width: 940px;
   padding: 0;
   margin: 0 auto;
 
-<<<<<<< HEAD
   // @include small {
   //   margin: 0 auto;
   //   width: 540px;
@@ -46,22 +41,4 @@ body {
   // @include extra {
   //   width: 1140px;
   // }
-=======
-  @include small {
-    margin: 0 auto;
-    width: 540px;
-  }
-
-  @include medium {
-    width: 720px;
-  }
-
-  @include large {
-    width: 960px;
-  }
-
-  @include extra {
-    width: 1140px;
-  }
->>>>>>> Illia
 }
