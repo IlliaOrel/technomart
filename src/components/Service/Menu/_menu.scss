@@ -1,0 +1,27 @@
+.service__item   {
+  display: block;
+  width: 240px;
+  height: 60px;
+  line-height: 45px;
+  background: #3c536e;
+  margin: 0;
+  color: #fff;
+  padding-left: 15px;
+  cursor: pointer;
+  font-family: $base-font;
+  transition: background .2s ease-in-out;
+  border-bottom: 1px solid #33445b ;
+  border-bottom:1px solid #4e637c;
+  
+  &:hover{
+      background-color: #fff;
+      color: #3c536e;
+    }
+
+  &:before{
+      content: '';
+      position: absolute;
+      display: block;
+      height: 45px;
+  }
+}
