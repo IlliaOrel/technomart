@@ -1,4 +1,6 @@
 @import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|CPT+Sans:400,400i,700,700i&amp;subset=cyrillic"');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import "./assets/scss/vars";
 @import "./assets/scss/mixins";
 @import "./assets/scss/default";
@@ -15,9 +17,11 @@
 @import "./components/About/about";
 @import "./components/Logo/logo";
 @import "./components/Maker/maker";
+@import "./components/Maker/Maker-card/maker-card";
 @import "./components/Products/products";
 @import "./components/SectionHeader/sectionheader";
 @import "./components/Products/products";
+<<<<<<< HEAD
 @import "./components/Layout/Footer/footer";
 @import "./components/Layout/Footer/FooterTop/footer-top";
 @import "./components/Layout/Footer/FooterBottom/footer-bottom";
@@ -26,3 +30,6 @@
 @import "./components/Service/Menu/Openfolder/Delivery/delivery";
 
 
+=======
+@import "./components/Products/Card/product-card";
+>>>>>>> Taras
