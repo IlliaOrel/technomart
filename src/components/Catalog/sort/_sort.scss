@@ -1,0 +1,44 @@
+.catalog__sort{
+  width: 75%;
+}
+  
+.catalog__sort--header{
+  background-color: #f7f3ec;
+  display: flex;
+   justify-content: space-between;
+}
+
+.catalog__sort--title{
+  margin: 0;
+  padding: 15px;
+}
+
+.catalog--sort__btn{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort__btn{
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  &:hover{
+    .sort__btn--title{
+      text-decoration-color: #fe5257;
+    }
+  }
+}
+
+.catalog__sort--title{
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+}
+
+.sort__btn--title{
+  margin: 0;
+  text-transform: uppercase;
+}

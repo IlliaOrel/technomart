@@ -1,0 +1,16 @@
+.catalog--header{
+  background-color: #f2f6f8;
+  margin: 20px 0;
+}
+
+.catalog__prod{
+  display: flex;
+}
+
+.catalog__list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
