@@ -1,0 +1,51 @@
+{%
+    set items = [
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 3000', oldPrice: '1500grn', price:'1000grn', new: true},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 6000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 3000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: true},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 5000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: true},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: false},
+      { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: true}
+    ]
+  %}
+  
+  {% import "components/Products/Card/product-card.html" as product %}
+<section class="section catalog">
+  <div class="container container__catalog">
+    <div class="section__header catalog--header">
+      <h2 class="section__header--title">
+      перфоратори
+      </h2>
+    </div>
+    <div class="catalog__prod">
+
+      {% block filter %}
+        {% include 'components/Catalog/filter/filter.html' %}
+      {% endblock %}
+      
+      <div class="catalog__sort">
+
+        {% block sort %}
+          {% include 'components/Catalog/sort/sort.html' %}
+        {% endblock %}
+
+        <ul class="catalog__list">
+
+        {% for item in items %}
+          {{ product.card(item.photo, item.title, item.oldPrice, item.price, item.new) }}
+        {% endfor %}
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
