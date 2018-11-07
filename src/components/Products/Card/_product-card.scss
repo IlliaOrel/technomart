@@ -14,7 +14,7 @@
     }
     .btn__list {
       width: 184px;
-      height: 164px;
+      height: 168px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -22,6 +22,16 @@
     }
   }
 }
+
+
+  .product__photo{
+  width: 184px;
+  height: 168px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .product__card {
   margin: 0;
