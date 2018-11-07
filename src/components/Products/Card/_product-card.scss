@@ -6,7 +6,7 @@
   position: relative;
 
   &:hover{
-    border: none;
+    border: transparent;
     box-shadow: 0 15px 20px rgba(0, 0, 0, .25);
 
     .product__photo{
@@ -21,6 +21,14 @@
       justify-content: center;
     }
   }
+}
+
+.product__photo{
+  width: 184px;
+  height: 168px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product__card{
