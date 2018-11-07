@@ -1,0 +1,50 @@
+.garantee {
+    background-color:#f5f8fa;
+    color: #000;
+  }
+
+  .garantee__title{
+    font-family: $base-font;
+    color: #3c536e;
+    text-transform: uppercase;
+  }
+
+  .garantee__description{
+    color: $primary-text;
+    }
+  
+  
+
+  
+  .container--garantee {
+    box-shadow: -10px 0 1px 0 rgba(0,0,0,.1);
+    border: none;
+    @include extra {
+          height: 210px;
+          width: 700px;
+          display: flex;
+          }
+    }       
+        
+    
+
+    .container--img {
+      @include extra {
+        margin-left: 135px;
+        justify-content: flex-end;
+        width: 50%;
+      }
+      
+    }
+
+
+   
+    
+  .garantee__description-wrap {
+    color: #3c536e;
+    @include extra {
+      width: 50%;
+      margin-left: 80px;
+      justify-content: flex-start;
+    }
+  }

@@ -7,17 +7,21 @@
   font-family: $base-font;
   color: $primary-text;
   text-transform: uppercase;
+  
 }
 
 .service__description-wrap {
   @include large {
     width: 50%;
+    padding-top: 60px;
   }
 } 
 
 .service__openfolder {
   @include large {
     display: flex;
+    padding-top: 50px;
+  padding-bottom: 95px;
 }
 }
 
