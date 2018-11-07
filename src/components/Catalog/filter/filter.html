@@ -1,10 +1,80 @@
-<div class="catalog__filter">
-  <div class="catalog__filter--header">
-    <h3 class="catalog__filter--title">
+<div class="catalog-filter">
+  <div class="catalog-filter__header">
+    <h3 class="catalog-filter__title">
       Фильтр:
     </h3>
   </div>
-  <ul class="catalog__filter-list">
-    <li>1</li>
-   </ul>
+  <ul class="catalog-filter__list">
+    <li class="catalog-filter__item price--filter">
+      <h2 class="catalog-filter__item-title">Цена:</h2>
+      <div class="catalog-filter__range">
+        <input class="price__input " type="range" min="0" max="170" step="1" value="50">
+      </div>
+      <div class="catalog-filter__price-range">
+        <div class="price-wrap">0</div>
+        <span class="separator">-</span>
+        <div class="price-wrap">3000</div>
+      </div>
+    </li>
+    <li class="catalog-filter__item producer--filter">
+      <h2 class="catalog-filter__item-title">Производители:</h2>
+      <ul class="catalog-filter__item-list producer__list">
+        <li class="producer__item">
+          <label for="Bosch" class="producer__label">
+            <input type="checkbox" class="producer__input" id="Bosch">
+            <img src="img/filter/checkbox-off.png" alt="" class="checkbox-radio checkbox--off">
+            <img src="img/filter/checkbox-on.png" alt="" class="checkbox-radio checkbox--on">
+            <span class="producer__label-line">Bosch</span></label>
+        </li>
+        <li class="producer__item">
+          <label for="Inter" class="producer__label">
+            <input type="checkbox" class="producer__input" id="Inter">
+            <img src="img/filter/checkbox-off.png" alt="" class="checkbox-radio checkbox--off">
+            <img src="img/filter/checkbox-on.png" alt="" class="checkbox-radio checkbox--on">
+            <span class="producer__label-line">Интерскол</span></label>
+        </li>
+        <li class="producer__item">
+          <label for="Makita" class="producer__label">
+            <input type="checkbox" class="producer__input" id="Makita">
+            <img src="img/filter/checkbox-off.png" alt="" class="checkbox-radio checkbox--off">
+            <img src="img/filter/checkbox-on.png" alt="" class="checkbox-radio checkbox--on">
+            <span class="producer__label-line">Makita</span></label>
+        </li>
+        <li class="producer__item">
+          <label for="Dewalt" class="producer__label">
+            <input type="checkbox" class="producer__input" id="Dewalt">
+            <img src="img/filter/checkbox-off.png" alt="" class="checkbox-radio checkbox--off">
+            <img src="img/filter/checkbox-on.png" alt="" class="checkbox-radio checkbox--on">
+            <span class="producer__label-line">Dewalt</span></label>
+        </li>
+        <li class="producer__item">
+          <label for="Hitachi" class="producer__label">
+            <input type="checkbox" class="producer__input" id="Hitachi">
+            <img src="img/filter/checkbox-off.png" alt="" class="checkbox-radio checkbox--off">
+            <img src="img/filter/checkbox-on.png" alt="" class="checkbox-radio checkbox--on">
+            <span class="producer__label-line">Hitachi</span></label>
+        </li>
+      </ul>
+
+    <li class="catalog-filter__item power--filter">
+      <h2 class="catalog-filter__item-title">Питание:</h2>
+      <ul class="catalog-filter__item-list power__list">
+        <li class="producer__item">
+          <label for="Acum" class="producer__label">
+            <input type="radio" name="radio" class="producer__input" id="Acum">
+            <img src="img/filter/radio-off.png" alt="" class="checkbox-radio checkbox--off">
+            <img src="img/filter/radio-on.png" alt="" class="checkbox-radio checkbox--on">
+            <span class="producer__label-line">Акумуляторные</span></label>
+        </li>
+        <li class="producer__item">
+          <label for="Net" class="producer__label">
+            <input type="radio" name="radio" class="producer__input" id="Net">
+            <img src="img/filter/radio-off.png" alt="" class="checkbox-radio checkbox--off">
+            <img src="img/filter/radio-on.png" alt="" class="checkbox-radio checkbox--on">
+            <span class="producer__label-line">Сетевые</span></label>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <button class="catalog-filter__btn">Показать</button>
 </div>

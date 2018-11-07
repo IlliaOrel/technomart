@@ -17,6 +17,20 @@
       { photo: 'img/product1.png', title: 'Перфоратор BOSCH BFG 9000', oldPrice: '1500grn', price:'1000grn', new: true}
     ]
   %}
+
+  <div class="container">
+      {% set PagesNavItems = [
+        { title: 'Каталог', href: '#'},
+        { title: 'Инструменты', href: '#'},
+        { title: 'Перфораторы', href: '#'}
+      ] %}
+    
+      {% import 'components/Nav/pages-nav.html' as PagesNavList %}
+      {{ PagesNavList.nav(PagesNavItems) }}
+  </nav>
+</div>
+
+  
   
   {% import "components/Products/Card/product-card.html" as product %}
 <section class="section catalog">

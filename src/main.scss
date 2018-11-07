@@ -1,10 +1,11 @@
 @import "normalize";
-@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|CPT+Sans:400,400i,700,700i&amp;subset=cyrillic"');
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|CPT+Sans:200,400,400i,700,700i&amp;subset=cyrillic"');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import "./assets/scss/vars";
 @import "./assets/scss/mixins";
 @import "./assets/scss/default";
 @import "./components/Nav/nav";
+@import "./components/Nav/pages-nav";
 @import "./components/Offer/offer";
 @import "./components/Layout/Header/header";
 @import "./components/Layout/Header/HeaderTop/header-top";
@@ -27,4 +28,5 @@
 @import "./components/Products/Card/product-card";
 @import "./components/Catalog/catalog";
 @import "./components/Catalog/filter/filter";
+@import "./components/Catalog/filter/range";
 @import "./components/Catalog/sort/sort";
