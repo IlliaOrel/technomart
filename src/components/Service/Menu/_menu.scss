@@ -1,5 +1,6 @@
 .service__item   {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 240px;
   height: 60px;
   line-height: 45px;
@@ -9,19 +10,20 @@
   padding-left: 15px;
   cursor: pointer;
   font-family: $base-font;
-  transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out, border-bottom .2s linear;
   border-bottom: 1px solid #33445b ;
   border-bottom:1px solid #4e637c;
+
+  .title {
+    @include font-size(21);
+    line-height: 30px;
+  }
   
   &:hover{
       background-color: #fff;
       color: #3c536e;
+      border-bottom: none;
     }
 
-  &:before{
-      content: '';
-      position: absolute;
-      display: block;
-      height: 45px;
-  }
+  
 }

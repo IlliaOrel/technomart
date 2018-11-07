@@ -1,0 +1,156 @@
+.catalog-filter {
+  flex: 1 0 23.4042%;
+}
+
+.catalog-filter__header {
+  background-color: #f7f3ec;
+  border-radius: 2px;
+}
+.catalog-filter__title {
+  margin: 0;
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+}
+
+.catalog-filter__list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.catalog-filter__item {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+  padding-top: 25px;
+    &:last-child {
+      border: none;
+    }
+
+  &:first-child {
+    padding-top: 20px;
+  }
+}
+
+.catalog-filter__item-title {
+  font-family: "PT Sans", sans-serif;
+  @include font-size(17);
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.catalog-filter__item-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.catalog-filter__range {
+  background: #f7f3ec;
+  padding: 26.02px 25px 26.02px 25px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.catalog-filter__price-range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  height: 40px;
+  background: #f7f3ec;
+  border-radius: 4px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+.producer__item {
+  display: flex;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.producer__label {
+  height: 23px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+   &:hover {
+     .checkbox-radio {
+       opacity: 0.5;
+     }
+   }
+}
+
+.producer__label-line {
+  display: block;
+  padding-left: 35px;
+  line-height: 20px;
+  @include font-size(15);
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+}
+
+.checkbox-radio {
+  opacity: 0.25;
+}
+.checkbox--off {
+  position: absolute;
+  visibility: visible;
+  left: 0;
+  bottom: 0;
+}
+
+.checkbox--on {
+  position: absolute;
+  visibility: hidden;
+  left: 0;
+  bottom: 0;
+}
+
+.producer__input {
+  display: none;
+  &:checked ~ .checkbox--on {
+    visibility: visible;
+  }
+
+  &:checked ~ .checkbox--off {
+    visibility: hidden;
+  }
+}
+
+.catalog-filter__btn {
+  width: 140px;
+  height: 38px;
+  padding-top: 3px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  margin-top: 50px;
+  @include font-size(13);
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border 0.1s linear;
+   &:hover {
+    border: 2px solid #ed3543;
+    color: #ed3543;
+    background: #f7f2ec;
+   }
+}

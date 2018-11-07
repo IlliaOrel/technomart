@@ -1,9 +1,13 @@
-
-.service{
-  background-color:#f5f8fa;
+.service {
+  background-color: #f5f8fa;
+  padding-top: 70px;
+  padding-bottom: 85px;
 }
 
-.service__title{
+
+
+.service__title {
+  margin-top: 0;
   font-family: $base-font;
   color: $primary-text;
   text-transform: uppercase;
@@ -11,6 +15,7 @@
 }
 
 .service__description-wrap {
+<<<<<<< HEAD
   @include large {
     width: 50%;
     padding-top: 60px;
@@ -22,41 +27,16 @@
     display: flex;
     padding-top: 50px;
   padding-bottom: 95px;
+=======
+  width: 50%;
 }
+
+.service__openfolder {
+  display: flex;
+>>>>>>> Develop
 }
 
-
-
-.service__list{
+.service__list {
   list-style: none;
   padding: 0;
 }
-
-
-
-
-/* .service__item   {
-  display: block;
-  width: 200px;
-  height: 45px;
-  line-height: 45px;
-  background: #3c536e;
-  margin: 0;
-  color: #fff;
-  padding-left: 15px;
-  cursor: pointer;
-  font-family: $base-font;
-  transition: background .2s ease-in-out;
-  
-  &:hover{
-      background-color: #fff;
-      color: #3c536e;
-    }
-
-  &:before{
-      content: '';
-      position: absolute;
-      display: block;
-      height: 45px;
-  }
-} */

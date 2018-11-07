@@ -1,0 +1,12 @@
+.maker {
+  padding-bottom: 65px;
+}
+
+.maker__list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}

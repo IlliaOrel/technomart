@@ -1,0 +1,34 @@
+{%
+  set items = [
+    { logo: 'img/maker/bosch.png', logoTitle: 'Bosch'},
+    { logo: 'img/maker/Makita.png', logoTitle: 'Makita'},
+    { logo: 'img/maker/DeWalt.png', logoTitle: 'DeWalt'},
+    { logo: 'img/maker/LG.png', logoTitle: 'LG'},
+    { logo: 'img/maker/bosch.png', logoTitle: 'Bosch'},
+    { logo: 'img/maker/bosch.png', logoTitle: 'Bosch'},
+    { logo: 'img/maker/bosch.png', logoTitle: 'Bosch'},
+    { logo: 'img/maker/bosch.png', logoTitle: 'Bosch'}
+  ]
+%}
+
+{% import "components/maker/maker-card/maker-card.html" as maker %}
+
+<section class="section maker">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__header--title">
+        популярные производители:
+      </h2>
+      <a href="#" class="section__header--btn">
+        <p class="section__header--btn--title">
+        все производители
+        </p>
+      </a>
+    </div>
+    <ul class="maker__list">
+      {% for item in items %}
+        {{ maker.card(item.logo, item.logoTitle) }}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

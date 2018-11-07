@@ -1,0 +1,57 @@
+.logo {
+  width: 220px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fe5257;
+  position: relative;
+  transition: background 0.1s linear;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background:#c13e42;
+    height: 5px;
+    width: 100%;
+    bottom: -5px;
+  }
+
+  &:hover{
+    background: #ca2b36;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
+   }
+
+  &:hover::before{
+    background: #992129;
+  } 
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:100%;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  @include font-size(24);
+
+  &:active {
+     background: #ba2731;
+  }
+
+  &:active:before {
+    background: #8d1e25;
+  }
+
+}
+
+.logo__line {
+  display: block;
+  padding-top: 3px;
+}
+
+

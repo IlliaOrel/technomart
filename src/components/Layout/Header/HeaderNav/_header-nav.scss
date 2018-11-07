@@ -1,0 +1,20 @@
+.nav__header {
+  display: flex;
+  align-items: center;
+  background: $secondary;
+  border-bottom: 5px solid $primary;
+  height: 60px;
+}
+
+.nav__header .nav__link {
+  transition: background 0.1s linear;
+  height: 100%;
+
+  &:hover {
+    background: $primary;
+  }
+
+  &:active {
+    color: #8e939c;
+  }
+}

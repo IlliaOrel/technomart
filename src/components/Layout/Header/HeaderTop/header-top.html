@@ -1,0 +1,38 @@
+<div class="header-top">
+  <div class="container container--header-top">
+
+    {% include 'components/Logo/logo.html' %}
+
+    <form action="none" class="header-top-search__form">
+      <input id="header-top-search" type="search" placeholder="Поиск:" class="header-top-search__input">
+      <span class="header-top__icon header-top__icon--search">
+       <label for="header-top-search"><i class="material-icons md-48">search</i></label>
+      </span>  
+    </form>
+
+    <div class="header-top-order">
+      <div class="header-top-order__bookmarks">
+        <a href="" class="header-top-order__link">
+          <span class="header-top__icon">
+            <i class="material-icons">bookmark</i>
+          </span>
+          <h4 class="header-top-order__title">Закладки:</h4>
+          <span class="header-top-order__count">0</span>
+        </a>
+      </div>
+      <div class="header-top-order__cart">
+          <a href="#" class="header-top-order__link">
+            <span class="header-top__icon">
+              <i class="material-icons">shopping_cart</i>
+            </span>
+            <h4 class="header-top-order__title">Корзина:</h4>
+            <span class="header-top-order__count">0</span>
+          </a>
+      </div>
+      <button class="header-top-order__btn">
+        Оформить заказ
+      </button>
+    </div>
+
+  </div>
+</div>

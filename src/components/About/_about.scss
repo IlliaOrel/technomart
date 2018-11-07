@@ -1,0 +1,38 @@
+.container__about{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding-bottom: 85px;
+}
+.section__about{
+  width: 50%;
+}
+
+.section__title{
+  font-family: $base-font;
+  color: $primary-text;
+  text-transform: uppercase;
+}
+.section__sub-title{
+  font-family: $base-font;
+  margin: 35px 0;
+}
+
+.section__about--list{
+  list-style: none;
+  padding: 0;
+}
+
+.section__about--item{
+  font-weight: bold;
+    &:before{
+      content: '—  ';
+      color: #ca2c37;
+    }
+}
+
+.contacts--map{
+  height: 156px;
+  width: 300px;
+  margin: 40px 0 16px 0;
+}
