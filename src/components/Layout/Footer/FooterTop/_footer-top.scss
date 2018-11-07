@@ -14,6 +14,10 @@
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 52px;
+
+  @include extra {
+    padding-right: 40px;
+  }
 }
 
 .nav__footer .nav__link {
@@ -44,8 +48,14 @@
   color: #f3f7f9;
   @include font-size(18);
   line-height: 24px;
+
+  @include extra {
+    padding-left: 40px;
+  }
 }
 
 .footer-top__adress-wrap p {
   margin: 0;
 }
+
+
