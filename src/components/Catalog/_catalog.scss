@@ -14,3 +14,43 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.catalog__sort{
+  flex: 1 0 74.4680%;
+  margin-left: 2.12765%;
+  border-radius: 5px;
+}
+.btn__page{
+  margin: 50px 0 60px 0;
+}
+
+.btn__page--numb{
+  height: 35px;
+  width: 35px;
+  margin-right: 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  background: none;
+  outline: none;
+
+  &:hover{
+    border: 1px solid #aca9a9;
+  }
+  
+  &:active{
+    border: 1px solid #fe5257;
+  }
+}
+
+.page--next{
+  width: 140px;
+}
+
+.btn__page--title{
+  font-size: 13px;
+  font-family: 'PT Sans', sans-serif;
+  color: #000;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}

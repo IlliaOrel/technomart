@@ -5,9 +5,15 @@
   height: 315px;
   position: relative;
 
+<<<<<<< HEAD
   &:hover {
     border-color: transparent;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
+=======
+  &:hover{
+    border: transparent;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .25);
+>>>>>>> Taras
 
     .product__photo {
       display: none;
@@ -23,7 +29,19 @@
   }
 }
 
+<<<<<<< HEAD
 .product__card {
+=======
+.product__photo{
+  width: 184px;
+  height: 168px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__card{
+>>>>>>> Taras
   margin: 0;
   display: flex;
   flex-direction: column;

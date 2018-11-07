@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 .catalog-filter {
   flex: 1 0 23.4042%;
+=======
+.catalog__filter{
+  width: 25%;
+  margin-right: 10px;
+>>>>>>> Taras
 }
 
 .catalog-filter__header {
   background-color: #f7f3ec;
+  border-radius: 2px;
 }
 .catalog-filter__title {
   margin: 0;
