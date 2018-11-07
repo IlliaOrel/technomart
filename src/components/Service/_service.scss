@@ -15,25 +15,11 @@
 }
 
 .service__description-wrap {
-<<<<<<< HEAD
-  @include large {
-    width: 50%;
-    padding-top: 60px;
-  }
-} 
-
-.service__openfolder {
-  @include large {
-    display: flex;
-    padding-top: 50px;
-  padding-bottom: 95px;
-=======
   width: 50%;
 }
 
 .service__openfolder {
   display: flex;
->>>>>>> Develop
 }
 
 .service__list {
