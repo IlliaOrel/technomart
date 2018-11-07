@@ -13,7 +13,6 @@ padding: 10px;
   margin-bottom: 20px;
   padding-top: 20px;
 
-
   &--materials {
     background-color: #f6b22d;
   }
@@ -24,14 +23,17 @@ padding: 10px;
 
   &--machinery {
     background-color: #cc79d1;
+    margin-right: 0;
   }
 
   &--discount {
     background-color: #85d179;
+    margin-right: 0;
   }
 
   &--delivery {
     background-color: #f6b22d;
+    margin-right: 0;
   }
 
   &__title {
@@ -93,6 +95,13 @@ padding: 10px;
       background-position: -5px -5px;
     }
   }
+
+  @include large {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0;
+    
+  }
 }
 
 .category {
@@ -105,13 +114,32 @@ padding: 10px;
   }
 
   &__column {
-   /*  display: inline-block; */
-   flex-direction: row;
+    /*  display: inline-block; */
+    flex-direction: row;
+  }
+  &__column--2 {
+   
+    @include large {
+      flex: 1 0 66.6666%;
+    }
+  }
+
+  &__column--1 {
+   
+    @include large {
+      flex: 1 0 33.3333%;
+    }
+  }
+
+
+
+  @include large {
+    width: auto;
+    flex: 1 0 66.666%;
   }
 }
 
 .btn {
- 
   font-family: $base-font;
   font-size: 14px;
   line-height: 38px;
@@ -158,7 +186,6 @@ padding: 10px;
 }
 
 .label-new {
-
   &::before {
     position: absolute;
     z-index: 5;
@@ -185,7 +212,6 @@ padding: 10px;
   height: 100%;
   padding-top: 25px;
 
-
   &__title {
     font-family: $base-font;
     font-size: 36px;
@@ -209,14 +235,16 @@ padding: 10px;
   }
 }
 
-
 .slider {
   position: relative;
   width: 620px;
   height: 266px;
   margin-right: 20px;
   background: url("../img/man-2.png");
-}
- 
 
-  
+  @include large {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}

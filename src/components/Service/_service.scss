@@ -2,6 +2,11 @@
   background-color: #f5f8fa;
   padding-top: 70px;
   padding-bottom: 85px;
+
+  @include extra {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 
