@@ -1,14 +1,12 @@
 {% macro card(photo, title, oldPrice, price, new = false) %}
 <li class="product__item">
   {% if new === true %}
-    <div class="product__badge">
-      <p class="product__badge-title">new</p>
-    </div>
+  <div class="product__badge">
+    <p class="product__badge-title">new</p>
+  </div>
   {% endif %}
   <figure class="product__card">
-    <div class="product__photo">
-        <img src="{{ photo }}" alt="product" class="photo">
-    </div>
+    <img src="{{ photo }}" alt="product" class="product__photo">
     <div class="btn__list">
       <button class=" product__btn btn--buy">
         <p class="title__buy">
@@ -22,7 +20,9 @@
     </div>
     <h3 class="product__title">{{ title }}</h3>
     <p class="product__oldprice">{{ oldPrice }}</p>
-    <button class="product__price--btn"><p class="product__price">{{ price }}</p></button>
+    <button class="product__price--btn">
+      <p class="product__price">{{ price }}</p>
+    </button>
   </figure>
 </li>
 {% endmacro%}

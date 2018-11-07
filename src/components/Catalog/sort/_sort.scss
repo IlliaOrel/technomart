@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-.catalog__sort {
-  flex: 1 0 74.4680%;
-  margin-left: 2.12765%;  
-}
-
-.catalog__sort--header {
-  background-color: #f7f3ec;
-  display: flex;
-  justify-content: space-between;
-=======
 .catalog__sort--header{
   background-color: #f7f3ec;
   display: flex;
   justify-content: space-between;
   border-radius: 2px;
->>>>>>> Taras
 }
 
 .catalog__sort--title {
@@ -22,13 +10,8 @@
   padding: 15px;
 }
 
-<<<<<<< HEAD
-.catalog--sort__btn {
-  width: 50%;
-=======
 .catalog--sort__btn{
   width: 60%;
->>>>>>> Taras
   display: flex;
   justify-content: space-between;
   padding-right: 16px;
@@ -40,11 +23,6 @@
   outline: none;
   background: none;
   padding: 0;
-<<<<<<< HEAD
-  &:hover {
-    .sort__btn--title {
-      text-decoration-color: #fe5257;
-=======
   &:hover{
     .sort__btn--title{
       color: #000;
@@ -58,7 +36,6 @@
     .sort__btn--title{
       color: #ee3643;
       text-decoration: none;
->>>>>>> Taras
     }
   }
 }
@@ -72,9 +49,6 @@
 .sort__btn--title {
   margin: 0;
   text-transform: uppercase;
-<<<<<<< HEAD
-}
-=======
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   opacity: 0.5;
@@ -96,4 +70,3 @@
     color: #ee3643;
   }
 }
->>>>>>> Taras
