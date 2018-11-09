@@ -21,6 +21,9 @@
           <p class="section__sub-title">Вы можете забрать товар сами, 
             заехав в наш офис:</p>
           <div class="contacts--map">
+            {% block map %}
+              {% include 'components/about/map/snazzy-maps-example-ultra-light-with-labels-style.html' %}
+            {% endblock %}
           </div>
           <a href="#" class="section__header--btn">
             <p class="section__header--btn--title">
