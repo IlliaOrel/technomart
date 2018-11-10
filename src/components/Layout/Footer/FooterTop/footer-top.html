@@ -1,12 +1,14 @@
 <div class="footer-top">
   <div class="container container--footer">
     <div class="footer-top__row">
+      <div class="footer__logo">
       {% include 'components/Logo/logo.html' %}
+    </div>
       <nav class="nav__footer">
         {% set NavItems = [
           { title: 'Компания', href: '#'},
           { title: 'Новости', href: '#'},
-          { title: 'Каталог', href: '#'},
+          { title: 'Каталог', href: 'catalog.html'},
           { title: 'Доставка', href: '#'},
           { title: 'Контакты', href: '#'}
           ] %}    

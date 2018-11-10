@@ -1,10 +1,16 @@
 .catalog--header{
   background-color: #f2f6f8;
   margin: 20px 0;
+
+  @include small {
+    margin: 0 0 10px 0;
+  }
 }
 
 .catalog__prod{
   display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .catalog__list{
@@ -12,16 +18,39 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  
 }
 
 .catalog__sort{
+  position: relative;
+  display: flex;
+  flex-direction: column;
   flex: 1 0 74.4680%;
   margin-left: 2.12765%;
   border-radius: 5px;
+
+  @include large {
+    margin: 0;
+    padding-left: 10px;
+    flex: 1 0 75%;
+  }
+  @include medium {
+    flex: 0 1 80%;
+  }
+
+  @include small {
+    flex-basis: 100%;
+    padding-left: 0;
+  }
+
+
 }
 .btn__page{
   margin: 50px 0 60px 0;
+  @include medium {
+    padding-left: 20px;
+  }
 }
 
 .btn__page--numb{
@@ -40,6 +69,12 @@
   &:active{
     border: 1px solid #fe5257;
   }
+
+  @include medium{
+    height: 25px;
+    width: 25px;
+    
+  }
 }
 
 .page--next{
@@ -53,4 +88,53 @@
   text-align: center;
   margin: 0;
   text-transform: uppercase;
+}
+
+.sort__btn-arrows {
+  @include medium {
+    font-size: 2px;
+  }
+}
+
+.filter-button {
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  color: #f2f6f8;
+  justify-content: center;
+  height: 20px;
+  width: 60px;
+  background: #fe5257;
+  @include font-size(12);
+  line-height: 1;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  top: 40px;
+  left:10px;
+  border: none;
+  overflow: visible;
+  // outline: none;
+  visibility: hidden;
+  cursor: pointer;
+  z-index: 33;
+  
+  
+  @include small {
+    visibility: visible;
+  }
+
+    // &:active + .filter__checkbox{
+   
+    // }
+  
+}
+
+.filter__checkbox{
+  visibility: hidden;
+  &:checked  ~ .catalog-filter {
+    transform: translateX(0);
+    background: #fff;
+    box-shadow: 2px 2px 5px rgb(94, 89, 89);
+  }
 }

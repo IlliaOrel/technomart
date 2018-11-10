@@ -1,14 +1,16 @@
 <nav class="nav__header">
-  {% set NavItems = [
+  
+    {% set NavItems = [
     { title: 'Главная', href: '#'},
     { title: 'Компания', href: '#'},
-    { title: 'Каталог', href: '#'},
+    { title: 'Каталог', href: 'catalog.html'},
     { title: 'Новости', href: '#'},
     { title: 'Спецпредложения', href: '#'},
     { title: 'Доставка', href: '#'},
     { title: 'Контакты', href: '#'}
-  ] %}
+    ] %}
 
-  {% import 'components/Nav/nav.html' as NavList %}
-  {{ NavList.nav(NavItems)}}
+    {% import 'components/Nav/nav.html' as NavList %}
+    {{ NavList.nav(NavItems)}}
+ 
 </nav>

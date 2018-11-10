@@ -6,6 +6,13 @@
   display: flex;
   padding-top: 38px;
   padding-bottom: 28px;
+
+  @include large {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .footer-bottom__box {
@@ -13,13 +20,41 @@
 
   &:first-child {
     @include extra {
-      padding-left: 40px;
+      padding-left: 30px;
+    }
+
+    @include small {
+      padding-left: 20px;
+    }
+
+    @include tiny {
+      padding-left: 10px;
     }
   }
 }
 
 .footer-bottom--contacts {
   display: flex;
+  justify-content: flex-end;
+
+  @include extra {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include large {
+    padding-left: 40px;
+    flex-direction: column;
+  }
+
+  @include medium {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  @include extra-small {
+    padding-left: 0;
+  }
 }
 
 .footer-bottom__copyright {
@@ -27,6 +62,23 @@
   color: #fff;
   @include font-size(16);
   line-height: 18px;
+
+  @include medium {
+    @include font-size(15);
+  }
+
+  @include small {
+    @include font-size(13);
+  }
+
+  @include extra-small {
+    @include font-size(10);
+  }
+
+  @include tiny {
+    @include font-size(8);
+    line-height: 9px;
+  }
 }
 
 .socials__list {
@@ -62,10 +114,36 @@
   &:active {
     background: #ed3543;
   }
+
+  @include extra-small {
+    width: 30px;
+    height: 30px;
+    @include font-size(13);
+  }
 }
 
 .footer-bottom__contact {
-  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 0 1;
+  &:first-child {
+    padding-right: 40px;
+  }
+
+  @include large {
+    &:first-child {
+      padding-right: 20px;
+    }
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  @include tiny {
+    &:first-child {
+      padding-right: 10px;
+    }
+    padding-right: 10px;
+  }
 }
 
 .contacts__title {
@@ -75,6 +153,19 @@
   color: #fff;
   font-style: "Cuprum", sans-serif;
   font-weight: 400;
+  @include small {
+    @include font-size(12);
+    line-height: 15px;
+  }
+  @include extra-small {
+    @include font-size(10);
+    line-height: 9px;
+  }
+
+  @include tiny {
+    @include font-size(9);
+    line-height: 8px;
+  }
 }
 
 .contacts__link {
@@ -90,5 +181,19 @@
   &:active {
     color: #ed3543;
     text-decoration: none;
+  }
+  @include small {
+    @include font-size(12);
+    line-height: 10px;
+  }
+
+  @include extra-small {
+    @include font-size(10);
+    line-height: 9px;
+  }
+
+  @include tiny {
+    @include font-size(9);
+    line-height: 8px;
   }
 }
