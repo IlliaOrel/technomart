@@ -67,6 +67,11 @@ gulp.task('img', () => {
     .pipe(gulp.dest('dist/img'));
 });
 
+gulp.task('prod', () => {
+  return gulp.src('dist/**/*')
+  .pipe(gulp.dest('docs/'))
+})
+
 gulp.task('reload', () => {
   sync({
     server: {
