@@ -4,6 +4,7 @@
   width: 220px;
   height: 315px;
   position: relative;
+  @include tiny {height: 295px;}
 
   &:hover {
     border-color: transparent;
@@ -46,6 +47,11 @@
   font-weight: bold;
   font-size: 18px;
   margin: 0 0 18px 0;
+  @include tiny {
+      @include font-size(15);
+      padding: 0 10px;;
+      margin-bottom: 10px;
+  }
 }
 
 .product__oldprice {

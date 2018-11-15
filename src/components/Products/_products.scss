@@ -5,10 +5,21 @@
   justify-content: space-between;
   padding: 0 30px;
   align-items: center;
+
+  @include extra-small {
+    padding:0 15px;
+  }
 }
 
 .section__header--title{
   color: $secondary-text;
+
+  @include extra-small {
+    @include font-size(17);
+  }
+  @include tiny {
+    @include font-size(14);
+  }
 }
 
 .section__header--btn{
@@ -28,6 +39,19 @@
   &:active{
     background-color :#ba2732;
   }
+
+  @include medium{
+    width: 100%;
+  }
+
+  @include extra-small {
+    width: 170px;
+   
+  }
+
+  @include tiny {
+    width: 150px;
+     }
 }
 
 .section__header--btn--title{
@@ -35,6 +59,15 @@
   color: white;
   text-transform: uppercase;
   font-family: $base-font;
+  text-align: center;
+
+  @include medium {
+    @include font-size(14);
+  }
+  @include extra-small {
+   
+    @include font-size(12);
+  }
 }
 
 .products__list{
@@ -43,4 +76,13 @@
   justify-content: space-between;
   padding: 0;
   margin: 20px 0;
+  flex-wrap: wrap;
+
+  @include extra {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include medium {
+    justify-content: space-around;
+  }
 }

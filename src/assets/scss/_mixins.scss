@@ -1,16 +1,32 @@
-$breakpoint-small: 576px;
-$breakpoint-medium: 768px;
+
+$breakpoint-tiny: 400px;
+$breakpoint-extra-small: 555px;
+$breakpoint-small: 640px;
+$breakpoint-medium: 870px;
 $breakpoint-large: 940px;
 $breakpoint-extra: 980px;
 
+
+
+@mixin tiny {
+  @media screen and (max-width: $breakpoint-tiny) {
+    @content;
+  }
+  }
+@mixin extra-small {
+  @media screen and (max-width: $breakpoint-extra-small) {
+    @content;
+  }
+  }
+
 @mixin small {
-  @media screen and (min-width: $breakpoint-small) {
+  @media screen and (max-width: $breakpoint-small) {
     @content;
   }
 }
 
 @mixin medium {
-  @media screen and (min-width: $breakpoint-medium) {
+  @media screen and (max-width: $breakpoint-medium) {
     @content;
   }
 }

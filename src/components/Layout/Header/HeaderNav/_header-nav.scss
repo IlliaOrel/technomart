@@ -4,6 +4,20 @@
   background: $secondary;
   border-bottom: 5px solid $primary;
   height: 60px;
+
+  @include medium {
+    height: 45px;
+  }
+
+  @include extra-small {
+    height: 30px;
+    border-bottom: 3px solid $primary;
+  }
+
+  @include extra-small {
+    height: 25px;
+    border-bottom: 2px solid $primary;
+  }
 }
 
 .nav__header .nav__link {
@@ -17,4 +31,31 @@
   &:active {
     color: #8e939c;
   }
+
+  @include medium {
+    @include font-size(15);
+    padding: 0 10px;
+  }
+
+  @include small {
+    @include font-size(13);
+    padding: 0 8px;
+  }
+
+  @include extra-small {
+    @include font-size(10);
+    padding: 0 7px;
+  }
+
+  @include extra-small {
+    @include font-size(10);
+    padding: 0 6px;
+  }
+
+  @include tiny {
+    @include font-size(8);
+    padding: 0 2px;
+  }
+
+  
 }

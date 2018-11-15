@@ -2,6 +2,14 @@
   display: flex;
   list-style: none;
   padding-left: 0;
+
+  @include large {
+    padding-left: 10px;
+  }
+  @include extra-small {
+    margin: 5px 0;
+  }
+  
 }
 
 .pages-nav__link {
@@ -15,6 +23,14 @@
   transition: color 0.1s linear;
   &:hover {
     color: #ed3543;
+  }
+
+  @include medium{
+    @include font-size(10);
+  }
+
+  @include extra-small {
+    @include font-size(8);
   }
 }
 

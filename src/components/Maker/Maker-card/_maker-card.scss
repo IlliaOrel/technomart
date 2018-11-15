@@ -10,6 +10,11 @@
   &:active{
     opacity: .5;
   }
+
+  @include extra-small  {
+    width: 170px;
+    height: 100px;
+  }
 }
 
 .maker__link{

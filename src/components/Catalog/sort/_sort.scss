@@ -8,6 +8,9 @@
 .catalog__sort--title {
   margin: 0;
   padding: 15px;
+
+  
+   
 }
 
 .catalog--sort__btn{
@@ -15,6 +18,11 @@
   display: flex;
   justify-content: space-between;
   padding-right: 16px;
+
+  @include medium {
+    width: 70%;
+  }
+  
 }
 
 .sort__btn {
@@ -44,6 +52,14 @@
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
+
+  @include medium {
+    @include font-size(12);
+  }
+
+  @include small {
+    @include font-size(10);
+  }
 }
 
 .sort__btn--title {
@@ -55,6 +71,18 @@
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: #ee3643;
+
+  @include large {
+    @include font-size(11);
+  }
+
+  @include medium {
+    @include font-size(9);
+  }
+
+  @include small {
+    @include font-size(7);
+  }
 }
 .btn-arrow{
   color: #c5c5c5;
@@ -69,4 +97,13 @@
   &:active{
     color: #ee3643;
   }
+
+  @include small {
+    font-size:20px;
+  }
+}
+ 
+.sort__btn-arrows{
+  display: flex;
+  align-items: center;
 }
